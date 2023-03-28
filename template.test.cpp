@@ -3,6 +3,7 @@
 #include "template.hpp"
 
 void solve() {
+  print("Hello World");
   {
     vector<ll> v;
     rep(i, 3) v.push_back(i);
