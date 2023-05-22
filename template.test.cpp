@@ -64,4 +64,10 @@ void solve() {
     assert(x == 42);
     assert(flag == false);
   }
+  {
+    auto res = fix([](auto&& f, int n) -> int {
+      return n < 2 ? n : (f(n - 1) + f(n - 2));
+    })(5);
+    assert(res == 5);
+  }
 }
